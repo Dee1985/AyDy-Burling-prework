@@ -2,4 +2,40 @@ body {
   margin: 0;
   line-height: 1.5;
   text-transform: uppercase;
+  background-color: #79b9c6;
+  font-family: sans-serif;
+  letter-spacing: 0;
+}
+
+.logo {
+  font-weight: 700;
+  color: white;
+  font-size: 25px;
+  margin-bottom: 10%;
+}
+.subtitle {
+  text-align: center;
+  font-weight: 600;
+  font-size: small;
+  color: black;
+  margin-bottom: 15px;
+  margin: auto;
+}
+.banner {
+  text-align: center;
+  font-weight: 600;
+  font-size: 100px;
+  color: white;
+  margin: auto;
+  padding-bottom: 10px;
+}
+
+.box {
+  width: 170px;
+  padding: 5px 0px;
+  border: 2px solid white;
+  margin: auto;
+  color: white;
+  text-align: center;
+  font-weight: 525;
 }
