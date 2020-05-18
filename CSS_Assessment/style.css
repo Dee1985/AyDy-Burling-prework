@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+}
+
+.nav {
+  background-color: grey;
+  color: black;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+div.box-left {
+  float: left;
+  height: 500px;
+  width: 50%;
+  color: black;
+  background: blue;
+  border: 2px solid blue;
+  text-align: center;
+}
+p {
+  line-height: 500px;
+}
+
+div.box-right {
+  float: right;
+  height: 500px;
+  width: 25%;
+  color: black;
+  background: red;
+  border: 2px solid red;
+  text-align: center;
+}
+
+footer {
+  background: green;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
