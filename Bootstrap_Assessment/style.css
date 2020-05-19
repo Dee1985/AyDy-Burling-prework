@@ -6,9 +6,6 @@ https://www.w3c-lab.com/remove-all-the-rounded-corners-in-bootstrap-restore-to-t
   background-color: #120581 !important;
   margin: 0;
   padding: 0;
-}
-
-* {
   -webkit-border-radius: 0 !important;
   -moz-border-radius: 0 !important;
   border-radius: 0 !important;
