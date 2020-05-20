@@ -1,0 +1,31 @@
+Using Bootstrap, your portfolio site should be made using the following items:
+A navbar
+A responsive layout (remember the grid, rows and columns are your friends)
+eg. On an xs screen, content should take up the entire screen. On sm and larger screens, you should have some margins on the left and right side of the screen. Check out various sites on your mobile device versus your computer to see this in action!
+Responsive images
+
+BONUS Using Bootstrap, make a sticky footer and use sub-rows and sub-columns on your portfolio site (Hint: Check out the Bootstrap documentation)
+
+Your Bootstrap solution should minimize use of media queries.
+Colors:
+Teal color (used for headings and backgrounds): #4aaaa5
+Regular font color (used for paragraphs and all text besides the headings): #777777
+Main header background color: #ffffff
+Main header border color: #cccccc
+Footer background color: #666666
+Main content background color: #ffffff
+Main content border color: #dddddd
+Fonts:
+For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
+For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;.
+Profile Image Found on index.html:
+Use a picture of yourself.
+If you don't have a picture, you can grab a placeholder image from LoremPixel.
+Save the images to your images folder.
+Portfolio Images:
+Placeholder images can be found at LoremPixel.
+Save the images to your images folder.
+Background Images:
+The background pattern used was found on Subtle Patterns. You can browse through that site and find whichever pattern you like.
+Dimensions:
+The entire content and the main section content area is 960px wide.
