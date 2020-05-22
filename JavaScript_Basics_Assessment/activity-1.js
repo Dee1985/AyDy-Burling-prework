@@ -46,6 +46,6 @@ function comparisonOp() {
   const age1 = 42;
   const age2 = 52;
   const boolean = age1 > age2;
-  console.log(boolean);
+  return boolean;
 }
 comparisonOp();
