@@ -8,8 +8,10 @@ function promptUser() {
   for (let i = 0; i <= charLimit; i++) {
     if (userName.length > charLimit) {
       alert("Your name is greater than 4 characters long");
-    } else {
+    } else if (userName.length < charLimit) {
       alert("Your name is less than 4 characters long");
+    } else {
+      alert("Your name is exactly 4 characters long"); //I added this extra statement in case the user entered a name that was 4 characters in length
     }
   }
 }
