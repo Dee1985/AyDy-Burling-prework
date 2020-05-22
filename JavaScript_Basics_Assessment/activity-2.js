@@ -4,6 +4,7 @@
 function promptUser() {
   const userName = prompt("Please enter your first name");
   const charLimit = 4;
+  /*Add a conditional statement where if the variable's length is greater than 4, we alert the user that their name is greater than four characters. Otherwise, alert that their name is less than four characters.*/
   for (let i = 0; i <= charLimit; i++) {
     if (userName.length > charLimit) {
       alert("Your name is greater than 4 characters long");
@@ -13,7 +14,3 @@ function promptUser() {
   }
 }
 promptUser();
-
-// Add a conditional statement where if the variable's length is greater than 4, we alert the user that their name is greater than four characters.
-
-// Otherwise, alert that their name is less than four characters.
