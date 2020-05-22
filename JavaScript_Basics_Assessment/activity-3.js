@@ -5,7 +5,7 @@ let studentNames = ["Mario", "Yoshi", "Koopa"];
 // Create a loop that will prompt the user for three more names.
 function createStudentList() {
   for (let i = 0; i < 3; i++) {
-    const name = prompt("Enter a name");
+    const name = prompt("Please enter another name");
     studentNames.push(name);
   }
   // After every user input, store the new name into the array.
