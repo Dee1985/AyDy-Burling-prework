@@ -19,6 +19,10 @@ nav {
   zoom: 83%;
 }
 
+.btn {
+  background-color: #4aaaa5;
+  border-color: #4aaaa5;
+}
 .navbar {
   border-bottom: 2px solid #cccccc;
 }
@@ -34,6 +38,7 @@ hr {
 
 .card {
   font-family: Arial, Helvetica, sans-serif;
+  border-color: #dddddd;
 }
 .card-title {
   font-size: 20px;
