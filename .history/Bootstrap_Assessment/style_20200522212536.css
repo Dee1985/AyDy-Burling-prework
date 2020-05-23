@@ -1,0 +1,104 @@
+body {
+  background-color: black;
+  overflow:hidden;
+  padding: 0;
+}
+
+.video-container {
+  position: absolute;
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  bottom:0;
+	overflow-x: hidden;
+	overflow-x: hidden;
+}
+.video-container video {
+	/* Make video to at least 100% wide and tall */
+	min-width: 100%;
+	min-height: 100%;
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: 100%;
+  height: 100vh;
+	/* Center the video */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+
+body {
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+
+nav {
+  color: white;
+  font-family: "Monoton", cursive;
+}
+
+.lead {
+  font-family: "Lato", sans-serif;
+  color: rgb(179, 238, 18);
+}
+.btn {
+  color: white;
+  border-color: white;
+}
+
+h1.display-3 {
+  color: rgb(145, 200, 245);
+  /* padding-bottom: 20px; */
+  font-family: "Poppins", sans-serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* /* removing bootstrap rounded edges
+https://www.w3c-lab.com/remove-all-the-rounded-corners-in-bootstrap-restore-to-the-default-corner/
+*/
+/* * {
+  border-radius: 0 !important;
+  background-color: #120581 !important;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+body {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+nav {
+  color: white;
+  font-family: "Monoton", cursive;
+}
+
+.lead {
+  font-family: "Lato", sans-serif;
+  color: rgb(179, 238, 18);
+}
+.btn {
+  color: white;
+  border-color: white;
+}
+
+h1.display-3 {
+  color: white;
+  padding-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+} */ */

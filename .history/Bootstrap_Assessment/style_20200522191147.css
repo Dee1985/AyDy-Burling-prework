@@ -1,0 +1,112 @@
+body {
+    background: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+.blurb h2 {
+   color: #EA1C2C;
+   font-weight: 100;
+   font-size: 2.5rem;
+}
+
+.blurb p {
+    color: #f498b8;
+    font-weight: 100;
+    font-size: 1.125rem;
+    line-height: 2;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+    color: white;
+}
+
+#mainNavbar .nav-link:hover {
+    color: #EA1C2C;
+}
+
+#mainNavbar .navbar-brand {
+    color: #EA1C2C;
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #EA1C2C;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+}
+
+.navbar.scrolled {
+    background: rgb(222,192,222);
+    transition: background 500ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+    .blurb h2 {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/* /* removing bootstrap rounded edges
+https://www.w3c-lab.com/remove-all-the-rounded-corners-in-bootstrap-restore-to-the-default-corner/
+*/
+/* * {
+  border-radius: 0 !important;
+  background-color: #120581 !important;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+body {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+nav {
+  color: white;
+  font-family: "Monoton", cursive;
+}
+
+.lead {
+  font-family: "Lato", sans-serif;
+  color: rgb(179, 238, 18);
+}
+.btn {
+  color: white;
+  border-color: white;
+}
+
+h1.display-3 {
+  color: white;
+  padding-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+} */ */

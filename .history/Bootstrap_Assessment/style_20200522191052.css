@@ -1,0 +1,38 @@
+/* /* removing bootstrap rounded edges
+https://www.w3c-lab.com/remove-all-the-rounded-corners-in-bootstrap-restore-to-the-default-corner/
+*/
+/* * {
+  border-radius: 0 !important;
+  background-color: #120581 !important;
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  border-radius: 0 !important;
+}
+
+body {
+  text-transform: uppercase;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+nav {
+  color: white;
+  font-family: "Monoton", cursive;
+}
+
+.lead {
+  font-family: "Lato", sans-serif;
+  color: rgb(179, 238, 18);
+}
+.btn {
+  color: white;
+  border-color: white;
+}
+
+h1.display-3 {
+  color: white;
+  padding-bottom: 20px;
+  font-family: "Poppins", sans-serif;
+} */ */
