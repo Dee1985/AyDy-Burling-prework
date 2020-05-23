@@ -4,12 +4,17 @@
 	padding: 0;
 }
 
+#about {
+	padding-bottom: 45px;
+}
 section {
 	/* https://www.toptal.com/designers/subtlepatterns/?s=brick */
 	background-image: url('../img/brickwall_@2X.png');
 	background-position: center;
 }
-
+p {
+	line-height: 1.5;
+}
 nav {
 	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
@@ -30,9 +35,7 @@ hr {
 	border-top: 2px solid;
 	border-color: #cccccc;
 }
-div.col-4.mb-4 {
-	width: 20%;
-}
+
 .card {
 	font-family: Arial, Helvetica, sans-serif;
 	border-color: #dddddd;
