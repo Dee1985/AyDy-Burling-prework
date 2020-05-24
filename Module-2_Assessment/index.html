@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Which Witch Word Guessing Game</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="reset.css" /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- banner Jumbotron ===================================================================
+    <h1>Which Witch Word Guessing Game</h1>
+     <!-- game intro: Test your Harry Potter Trivia! Can you guess which Witch said what? Quotes from the Harry Potty Series have been selected and will be given to you. You win by guessing the character's name that said the famous line(s). Becareful! Spelling counts! You have 6 guesses for each question.-->
+
+    <!-- click on the hint button if you need some help. It will provide you with a full list of character names to choose from. But, I challenge you not to peek. -->
+    -->
+
+    <!-- question and answer section ========================================================
+    <!-- will need to lowercase answers
+    container with 2 rows and 2 columns
+    1: Quote: "You're a Wizard Harry."
+    2: Answer: _ _ _ _ _ _ (Hagrid)  -->
+    -->
+
+    <!-- box for life counter / box for wrong guesses to show ================================
+        ** if user input === hidden letter then continue, if user input !== hidden letter then play error sound && alert "you have already guessed that letter", && decrease number of guesses available (6)
+    -->
+
+    <!-- hint button toggle
+        ** array of all available character names
+        [
+        "harry",
+        "hermione",
+        "ron",
+        "percy",
+        "drako"
+        ]
+    -->
+
+    <!-- BONUSES ======================================================================
+    <!-- attemp to find audio clip or giphy of quotes when user is successful -->
+
+    <!-- audio clip when user loses -->
+
+    <!-- audio clip when user selects the same wrong answer -->
+    -->
+
+    <div class="container">
+      <div class="row" id="q-a">
+        <div class="col-*-*" id="quote"></div>
+        <div class="col-*-*" id="hidden-answer"></div>
+      </div>
+      <div class="row" id="tracker">
+        <div class="col-*-*" id="remaining-lives"></div>
+        <div class="col-*-*" id="wrong-guesses"></div>
+      </div>
+      <div class="row" id="hint">
+        Hint
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Code snippet for button toggle:
+<button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+<div id="demo" class="collapse">
+Lorem ipsum dolor text....
+ -->
