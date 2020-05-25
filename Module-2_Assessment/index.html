@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Which Witch Word Guessing Game</title>
+    <title>Which Witch</title>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -12,40 +12,93 @@
       crossorigin="anonymous"
     />
     <!-- <link rel="stylesheet" href="reset.css" /> -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="jumbotron align-items-center text-center mt-2 p-2">
-        <h1 class="display-4">Which Witch? Word Guessing Game</h1>
-        <p class="lead">Test your Harry Potter Knowledge!</p>
-        <hr class="my-4" />
-        <p>
-          Quotes from the Harry Potty Series have been selected and will be
-          given to you. You win by guessing the character's name that said the
-          famous line(s).
-          <p><b>Be careful! Spelling counts!</b> You have 6 guesses for
-          each quote. </p>
-          <p>click on the hint button if you need some help. It will
-          provide you with a full list of character names to choose from. But, I
-          challenge you not to peek.</p>
+    <section>
+      <div class="container">
+        <div class="row text-center justify-content-center shadow-lg p-3 mb-5 rounded mt-4">
+          <div class="col">
+          <div class="jumbotron pt-2">
+            <h4 class="text-center">WHICH WITCH</h4>
+            <p class="lead text-center">Test Your Harry Potter Knowledge!</p>
+            <hr class="my-6" />
+            <p class="intro">
+              Quotes from the Harry Potter series have been selected, and you
+              win by guessing the character's name that said the famous line(s).
+            </p>
+            <p class="intro">
+              <b>Be careful! Spelling counts!</b> You only have 5 guesses for
+              each quote.
+            </p>
+            <p class="intro">
+              <button>⭐</button> Click the star if you need some help. Doing so will
+              provide you with a list of character names to choose from. But, I
+              challenge you not to peek!
+            </p>
+          </div>
+          </div>
+        </div>
+    </section>
 
-        </p>
+    <section >
+    <span class="quote">
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-lg-9">
+        <div class="card mt-3">
+          <div class="card bg-secondary text-white text-center p-3" id="quote">
+            <blockquote class="blockquote mb-0">
+            <h4>"You're a wizard Harry"</h4>
+            <footer>
+            <medium>
+              <span class="display-4" id="hidden-letters">HAGRID</span>
+            </medium>
+            </footer>
+            </blockquote>
+          </div>
+        </div>
+        </div>
       </div>
+    </span>
+<!-- guesses remaining -->
+    <span>
+      <div class="row justify-content-center">
+        <div class="col-sm-10 col-lg-9">
+          <div class="card-deck mt-3">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="card-title text-center">GUESSES REMAINING</h6>
+              <hr>
+                <span>
+                  <p class="card-text" id="guesses-remaining">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </span>
+            </div>
+          </div>
 
-      <div class="row" id="q-a">
-        <div class="col-*-*" id="quote"></div>
-        <div class="col-*-*" id="hidden-answer"></div>
+
+          <div class="card">
+            <div class="card-body">
+
+              <h6 class="card-title text-center">WRONG LETTERS</h6>
+              <hr>
+              <span id="wrong-letters" >
+                <p class="card-text" >This card has supporting text below as a natural lead-in to additional content.</p>
+              </span>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
-      <div class="row" id="tracker">
-        <div class="col-*-*" id="remaining-lives"></div>
-        <div class="col-*-*" id="wrong-guesses"></div>
-      </div>
-      <div class="row" id="hint">
-        <!-- Hint -->
-      </div>
+    </span>
+
+<!-- <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
     </div>
-
+  </div> -->
+      </section>
     <!-- question and answer section ========================================================
     will need to lowercase answers
     container with 2 rows and 2 columns
