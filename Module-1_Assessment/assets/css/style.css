@@ -22,6 +22,11 @@ p {
 
 nav {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  /* background-color: white; */
+}
+
+.navbar-nav {
+  background: rgba(250, 249, 253, 0.9);
 }
 
 .navbar > .container {
@@ -37,7 +42,7 @@ nav {
 }
 
 div.col-sm-4 {
-  padding-right: 0px;
+  padding-right: 20px;
   margin-left: -6%;
 }
 
@@ -67,6 +72,7 @@ hr {
   border-color: #dddddd;
   margin-left: 20%;
   margin-right: 20%;
+  margin-bottom: 10%;
 }
 
 .card-title {
@@ -84,7 +90,7 @@ hr {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   position: absolute;
   bottom: 5%;
-  width: 100%;
+  width: 130%;
   padding-top: 5px;
   padding-bottom: 5px;
 }
