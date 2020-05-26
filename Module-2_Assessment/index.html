@@ -17,22 +17,42 @@
   <body>
     <section>
       <div class="container">
-        <div class="row text-center justify-content-center shadow-lg p-3 mb-5 rounded mt-4">
+        <div class="row text-center justify-content-center shadow-lg p-3 mb-2 rounded mt-4">
           <div class="col">
           <div class="jumbotron pt-2">
             <h4 class="text-center">WHICH WITCH</h4>
-            <p class="lead text-center">Test Your Harry Potter Knowledge!</p>
+            <p class="lead text-center font-italic">Test Your Harry Potter Knowledge!</p>
             <hr class="my-6" />
             <p class="intro">
               Quotes from the Harry Potter series have been selected, and you
               win by guessing the character's name that said the famous line(s).
             </p>
             <p class="intro">
-              <b>Be careful! Spelling counts!</b> You only have 5 guesses for
+              <b>Be careful! Spelling counts!</b> You only have 6 guesses for
               each quote.
             </p>
             <p class="intro">
-              <button>⭐</button> Click the star if you need some help. Doing so will
+              <button type="button" class="btn" data-toggle="modal" data-target="#hint">⭐</button>
+                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                  <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        ...
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              Click the star if you need some help. Doing so will
               provide you with a list of character names to choose from. But, I
               challenge you not to peek!
             </p>
@@ -42,47 +62,46 @@
     </section>
 
     <section >
-    <span class="quote">
       <div class="row justify-content-center">
-        <div class="col-sm-10 col-lg-9">
-        <div class="card mt-3">
-          <div class="card bg-secondary text-white text-center p-3" id="quote">
+        <div class="col-sm-10 col-lg-9" >
+        <div class="card mt-3" >
+
+          <span class="card bg-dark text-white text-center p-3">
             <blockquote class="blockquote mb-0">
-            <h4>"You're a wizard Harry"</h4>
-            <footer>
+            <h4 id="quote" ></h4>
+            <footer >
             <medium>
-              <span class="display-4" id="hidden-letters">HAGRID</span>
+              <span class="display-4 text-uppercase hiddenName" id="hiddenName" > </span>
             </medium>
             </footer>
             </blockquote>
-          </div>
+          </span>
+
         </div>
         </div>
       </div>
-    </span>
+
 <!-- guesses remaining -->
     <span>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center"  id="tracker">
         <div class="col-sm-10 col-lg-9">
           <div class="card-deck mt-3">
-          <div class="card">
+          <div class="card tracker">
             <div class="card-body">
-              <h6 class="card-title text-center">GUESSES REMAINING</h6>
+              <h6 class="card-title text-center text-info">GUESSES REMAINING</h6>
               <hr>
                 <span>
-                  <p class="card-text" id="guesses-remaining">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <p class="card-text display-4 text-warning text-center" id="guessesRemaining">6</p>
                 </span>
             </div>
           </div>
-
-
-          <div class="card">
+<!-- start of second card -->
+          <div class="card tracker">
             <div class="card-body">
-
-              <h6 class="card-title text-center">WRONG LETTERS</h6>
+              <h6 class="card-title text-center text-info">WRONG LETTERS</h6>
               <hr>
-              <span id="wrong-letters" >
-                <p class="card-text" >This card has supporting text below as a natural lead-in to additional content.</p>
+              <span id="wrongLetters" >
+                <p class="card-text text-center text-danger" >wrong guesses go here</p>
               </span>
             </div>
           </div>
@@ -90,15 +109,7 @@
         </div>
       </div>
     </span>
-
-<!-- <div class="card">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">This is another card with title and supporting text below. This card has some additional content to make it slightly taller overall.</p>
-      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-    </div>
-  </div> -->
-      </section>
+    </section>
     <!-- question and answer section ========================================================
     will need to lowercase answers
     container with 2 rows and 2 columns
@@ -116,7 +127,7 @@
         "hermione",
         "ron",
         "percy",
-        "drako"
+        "dumbledore"
         ]
     -->
 
@@ -142,6 +153,7 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script src="./javascript/game.js"></script>
   </body>
 </html>
 

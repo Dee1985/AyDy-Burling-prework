@@ -17,7 +17,7 @@ body {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.9) !important;
 }
 .jumbotron {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.5);
   margin-bottom: 0;
   padding-bottom: 5px;
   width: 100%;
@@ -31,6 +31,10 @@ body {
   border-color: rgb(15, 14, 1);
 }
 
-footer {
+.hiddenName {
   color: rgb(174, 248, 37);
+}
+
+.tracker {
+  background: rgba(255, 255, 255, 0.3);
 }
