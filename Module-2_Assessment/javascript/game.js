@@ -4,7 +4,7 @@ const guessesRemaining = document.getElementById("#guessesRemaining");
 const wrongLetters = document.getElementById("#wrongLetters");
 const modal = document.getElementById("#modal");
 
-// 1) create array of five name: quote
+// 1) create array of names & quotes
 
 let quotes = [
   {
@@ -37,14 +37,14 @@ let quotes = [
   },
 ];
 
-// 2) create function to pick key/value
+// 2) create function to pick quote
 function pickQuote() {
   const randomQuotePicked = quotes[Math.floor(Math.random() * quotes.length)];
   const { name, quote } = randomQuotePicked;
   //   console.log(name);
   //   console.log(quote);
 
-  // seperate letters in name
+  // separate letters in name
   console.log("quote picked: ", quote);
   const hiddenLetters = name.split("");
   //   console.log(hiddenLetters);
