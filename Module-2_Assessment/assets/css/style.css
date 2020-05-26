@@ -23,6 +23,9 @@ body {
   width: 100%;
 }
 
+p.intro {
+  margin-bottom: 0;
+}
 .intro {
   font-size: 14px;
 }
@@ -30,11 +33,28 @@ body {
 .card {
   border-color: rgb(15, 14, 1);
 }
-
+input {
+  background: grey;
+  color: rgb(174, 248, 37);
+}
 .hiddenName {
   color: rgb(174, 248, 37);
 }
 
 .tracker {
   background: rgba(255, 255, 255, 0.3);
+}
+.modal-header {
+  margin: auto;
+}
+
+.letter {
+  border-bottom: 3px solid #2980b9;
+  display: inline-flex;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3px;
+  height: 50px;
+  width: 20px;
 }

@@ -1,11 +1,11 @@
 // const question = document.querySelector("#quote");
-const hiddenName = document.getElementById("#hiddenName");
-const guessesRemaining = document.getElementById("#guessesRemaining");
-const wrongLetters = document.getElementById("#wrongLetters");
-const modal = document.getElementById("#modal");
+const hiddenName = document.getElementById("hiddenName");
+const guessesRemaining = document.getElementById("guessesRemaining");
+const wrongLetters = document.getElementById("wrongLetters");
+const modal = document.getElementById("modal");
+const hint = document.getElementById("hint");
 
 // 1) create array of names & quotes
-
 let quotes = [
   {
     name: "hagrid",
@@ -36,6 +36,8 @@ let quotes = [
       '"Of all the trees we could’ve hit, we had to get one that hits back."',
   },
 ];
+const randomQuotePicked = quotes[Math.floor(Math.random() * quotes.length)];
+const { name, quote } = randomQuotePicked;
 
 // 2) create function to pick quote
 function pickQuote() {
@@ -50,28 +52,57 @@ function pickQuote() {
   //   console.log(hiddenLetters);
 
   //display letters to be guessed with _ _ _
-  for (let i = 0; i < hiddenLetters.length; i++) {
-    hiddenLetters.splice(i, 1, "_");
-    console.log("answer: ", name, hiddenLetters[i]);
-  }
   //   for (let i = 0; i < hiddenLetters.length; i++) {
-  //     hiddenLetters[i] = "_";
+  //     hiddenLetters.splice(i, 1, "_");
+  //     console.log("hiddenLetters: ", name, hiddenLetters[i]);
   //   }
+  for (let i = 0; i < hiddenLetters.length; i++) {
+    hiddenLetters[i] = "_";
+    console.log("hiddenLetters: ", name, hiddenLetters[i]);
+  }
+
   document.getElementById("quote").innerHTML = quote;
   document.getElementById("hiddenName").innerHTML = hiddenLetters.join(" ");
+  console.log(hiddenLetters);
 }
 
 pickQuote();
 
+// Show hidden word
+
 //EVENT LISTENERS==============================================================
 //only allow valid guesses - lowercase letters only
 //display only valid guesses on _ _ _
-
+//modal view
+$(document).ready(function () {
+  $("#hint").click(function () {
+    $("#modal").modal();
+  });
+});
 //GAME RULES====================================================================
+
+// Show hidden word
+document.addEventListener("keydown", (e) => {
+  console.log("keypressed!");
+});
+
 //play starts with 6 lives
 //decrease lives with every wrong letter guess
+// Show lives
+let lives = 0;
+function guesses() {
+  if (lives === 0) {
+    console.log("GAME OVER!!");
+  } else {
+    pickQuote();
+  }
+  document.getElementById("guessesRemaining").innerHTML = lives;
+}
+guesses(lives);
+
 //display wrong guesses
 //if same wrong letter is guessed again in one game, display "you have already guessed that letter"
+// Keydown letter press
 
 //+++++++++++++++++++++++++++++++++++++++++++++++++
 //player loses

@@ -32,22 +32,28 @@
               each quote.
             </p>
             <p class="intro">
-              <button type="button" class="btn" data-toggle="modal" data-target="#hint">⭐</button>
+              <button type="button" class="btn" data-toggle="modal" id="hint">⭐</button>
                 <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <div class="modal-header" >
+                        <h5 class="modal-title " id="exampleModalLabel">You Peeked!!! 😉</h5>
+                        <button type="button" class="close pl-5" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        ...
+                        <ul class="list-group">
+                          <li class="list-group-item">DUMBLEDORE</li>
+                          <li class="list-group-item">HAGRID</li>
+                          <li class="list-group-item">RON</li>
+                          <li class="list-group-item">HERMIONE</li>
+                          <li class="list-group-item">HARRY</li>
+                          <li class="list-group-item">SIRIUS</li>
+                        </ul>
                       </div>
                       <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
+                        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
                       </div>
                     </div>
                   </div>
@@ -71,7 +77,9 @@
             <h4 id="quote" ></h4>
             <footer >
             <medium>
+
               <span class="display-4 text-uppercase hiddenName" id="hiddenName" > </span>
+
             </medium>
             </footer>
             </blockquote>
@@ -91,7 +99,7 @@
               <h6 class="card-title text-center text-info">GUESSES REMAINING</h6>
               <hr>
                 <span>
-                  <p class="card-text display-4 text-warning text-center" id="guessesRemaining">6</p>
+                  <p class="card-text display-4 text-warning text-center" id="guessesRemaining"></p>
                 </span>
             </div>
           </div>
