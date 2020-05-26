@@ -1,10 +1,11 @@
 // const question = document.querySelector("#quote");
-// const hiddenName = document.querySelector("#hiddenName");
-const guessesRemaining = document.querySelector("#guessesRemaining");
-const wrongLetters = document.querySelector("#wrongLetters");
-const modal = document.querySelector("#modal");
+const hiddenName = document.getElementById("#hiddenName");
+const guessesRemaining = document.getElementById("#guessesRemaining");
+const wrongLetters = document.getElementById("#wrongLetters");
+const modal = document.getElementById("#modal");
 
-//create array of five names with quotes
+// 1) create array of five name: quote
+
 let quotes = [
   {
     name: "hagrid",
@@ -35,26 +36,32 @@ let quotes = [
       '"Of all the trees we could’ve hit, we had to get one that hits back."',
   },
 ];
-console.log(quotes);
 
+// 2) create function to pick key/value
 function pickQuote() {
   const randomQuotePicked = quotes[Math.floor(Math.random() * quotes.length)];
   const { name, quote } = randomQuotePicked;
-  console.log(name);
-  console.log(quote);
+  //   console.log(name);
+  //   console.log(quote);
 
   // seperate letters in name
-  const hiddenLetters = name.split("");
   console.log("quote picked: ", quote);
-  console.log("answer: ", hiddenLetters);
-  //   console.log(letters);
+  const hiddenLetters = name.split("");
+  //   console.log(hiddenLetters);
+
+  //display letters to be guessed with _ _ _
+  for (let i = 0; i < hiddenLetters.length; i++) {
+    hiddenLetters.splice(i, 1, "_");
+    console.log("answer: ", name, hiddenLetters[i]);
+  }
+  //   for (let i = 0; i < hiddenLetters.length; i++) {
+  //     hiddenLetters[i] = "_";
+  //   }
   document.getElementById("quote").innerHTML = quote;
-  document.getElementById("hiddenName").innerHTML = name;
+  document.getElementById("hiddenName").innerHTML = hiddenLetters.join(" ");
 }
 
 pickQuote();
-
-//display letters to be guessed with _ _ _
 
 //EVENT LISTENERS==============================================================
 //only allow valid guesses - lowercase letters only
