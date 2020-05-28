@@ -19,138 +19,131 @@
       <div class="container">
         <div class="row text-center justify-content-center shadow-lg p-3 mb-2 rounded mt-4">
           <div class="col">
-          <div class="jumbotron pt-2">
-            <h4 class="text-center">WHICH WITCH</h4>
-            <p class="lead text-center font-italic">Test Your Harry Potter Knowledge!</p>
-            <hr class="my-6" />
-            <p class="intro">
-              Quotes from the Harry Potter series have been selected, and you
-              win by guessing the character's name that said the famous line(s).
-            </p>
-            <p class="intro">
-              <b>Be careful! Spelling counts!</b> You only have 6 guesses for
-              each quote.
-            </p>
-            <p class="intro">
-              <button type="button" class="btn" data-toggle="modal" id="hint">⭐</button>
-                <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header" >
-                        <h5 class="modal-title " id="exampleModalLabel">You Peeked!!! 😉</h5>
-                        <button type="button" class="close pl-5" data-dismiss="modal" aria-label="Close">
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <ul class="list-group">
-                          <li class="list-group-item">DUMBLEDORE</li>
-                          <li class="list-group-item">HAGRID</li>
-                          <li class="list-group-item">RON</li>
-                          <li class="list-group-item">HERMIONE</li>
-                          <li class="list-group-item">HARRY</li>
-                          <li class="list-group-item">SIRIUS</li>
-                        </ul>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+            <div class="jumbotron pt-2">
+              <h4 class="text-center">WHICH WITCH</h4>
+                <p class="lead text-center font-italic">Test Your Harry Potter Knowledge!</p>
+                <hr class="my-6" />
+              <p class="intro">
+                Quotes from the Harry Potter series have been selected, and you
+                win by guessing the character's name that said the famous line(s).
+              </p>
+              <p class="intro">
+                <b>Be careful! Spelling counts!</b> You only have 6 guesses for
+                each quote.
+              </p>
+              <!-- MODAL -->
+                <p class="intro">
+                  <button type="button" class="btn" data-toggle="modal" id="hint">⭐</button>
+                    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"  aria-hidden="true">
+                      <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header" >
+                            <h5 class="modal-title " id="exampleModalLabel">You Peeked!!! 😉</h5>
+                            <button type="button" class="close pl-5" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                          </div>
+                          <div class="modal-body">
+                            <ul class="list-group">
+                              <li class="list-group-item">DUMBLEDORE</li>
+                              <li class="list-group-item">HAGRID</li>
+                              <li class="list-group-item">RON</li>
+                              <li class="list-group-item">HERMIONE</li>
+                              <li class="list-group-item">HARRY</li>
+                              <li class="list-group-item">SIRIUS</li>
+                            </ul>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-info" data-dismiss="modal">Close</button>
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-              Click the star if you need some help. Doing so will
-              provide you with a list of character names to choose from. But, I
-              challenge you not to peek!
-            </p>
-          </div>
+                      Click the star if you need some help. Doing so will
+                      provide you with a list of character names to choose from. But, I
+                      challenge you not to peek!
+                </p>
+              <!-- END MODAL -->
+            </div>
           </div>
         </div>
     </section>
 
     <section >
+    <!-- Q&A box -->
       <div class="row justify-content-center">
-        <div class="col-sm-10 col-lg-9" >
-        <div class="card mt-3" >
-
-          <span class="card bg-dark text-white text-center p-3">
-            <blockquote class="blockquote mb-0">
-            <h4 id="quote" ></h4>
-            <footer >
-            <medium>
-
-              <span class="display-4 text-uppercase hiddenName" id="hiddenName" > </span>
-
-            </medium>
-            </footer>
-            </blockquote>
-          </span>
-
-        </div>
-        </div>
-      </div>
-
-<!-- guesses remaining -->
-    <span>
-      <div class="row justify-content-center"  id="tracker">
-        <div class="col-sm-10 col-lg-9">
-          <div class="card-deck mt-3">
-          <div class="card tracker">
-            <div class="card-body">
-              <h6 class="card-title text-center text-info">GUESSES REMAINING</h6>
-              <hr>
-                <span>
-                  <p class="card-text display-4 text-warning text-center" id="guessesRemaining"></p>
-                </span>
-            </div>
-          </div>
-<!-- start of second card -->
-          <div class="card tracker">
-            <div class="card-body">
-              <h6 class="card-title text-center text-info">WRONG LETTERS</h6>
-              <hr>
-              <span id="wrongLetters" >
-                <p class="card-text text-center text-danger" >wrong guesses go here</p>
+            <div class="col-sm-10 col-lg-9" >
+            <div class="card mt-3" >
+              <span class="card text-white text-center p-3">
+                <blockquote class="blockquote mb-0">
+                  <h4 id="quote" ></h4>
+                <footer >
+                  <medium>
+                    <span class="display-4 word text-warning text-uppercase" id="name" ></span>
+                  </medium>
+                </footer>
+                </blockquote>
               </span>
             </div>
+            </div>
           </div>
+
+    <!-- TRACKER CARD -->
+      <div class="row justify-content-center"  >
+        <div class="col-sm-10 col-lg-9">
+          <div class="card-deck mt-3">
+            <div class="card tracker">
+              <div class="card-body">
+                <h6 class="card-title text-center text-info">SCORE TRACKER</h6>
+                <hr>
+                  <div class="row m-0 text-center">
+                    <div class="col text-success" >
+                      <span id="wins">wins:</span>
+                    </div>
+                    <div class="col text-danger">
+                      <span class="text-danger"id="losses">losses:</span>
+                    </div>
+                  </div>
+              </div>
+            </div>
+
+            <!-- GUESSES REMAINING -->
+            <div class="card tracker">
+              <div class="card-body">
+                <h6 class="card-title text-center text-info">GUESSES REMAINING</h6>
+                <hr>
+                  <div class="row text-center guessesremaining">
+                      <div class="col">
+                        <span id="guessesRemaining">6
+                        </span>
+                      </div>
+                  </div>
+              </div>
+            </div>
+
+            <!-- WRONG GUESSES -->
+            <div class="card tracker">
+              <div class="card-body">
+                <h6 class="card-title text-center text-info">WRONG GUESSES</h6>
+                <hr>
+                <div class="row text-center">
+                  <div class="col">
+                    <span
+                    id="wrongLetters" >
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </span>
     </section>
-    <!-- question and answer section ========================================================
-    will need to lowercase answers
-    container with 2 rows and 2 columns
-    1: Quote: "You're a Wizard Harry."
-    2: Answer: _ _ _ _ _ _ (Hagrid)   -->
-
-    <!-- box for life counter / box for wrong guesses to show ================================
-        ** if user input === hidden letter then continue, if user input !== hidden letter then play error sound && alert "you have already guessed that letter", && decrease number of guesses available (6)
-    -->
-
-    <!-- hint button toggle
-        ** array of all available character names
-        [
-        "harry",
-        "hermione",
-        "ron",
-        "percy",
-        "dumbledore"
-        ]
-    -->
-
-    <!-- BONUSES ======================================================================
-     attemp to find audio clip or giphy of quotes when user is successful
-
-    - audio clip when user loses
-
-     audio clip when user selects the same wrong answer   -->
-
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
+      crossorigin="anonymous">
+    </script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -163,13 +156,5 @@
     ></script>
     <script src="./javascript/quotes.js"></script>
     <script src="./javascript/game.js"></script>
-
   </body>
 </html>
-
-<!-- Code snippet for button toggle:
-<button data-toggle="collapse" data-target="#demo">Collapsible</button>
-
-<div id="demo" class="collapse">
-  Lorem ipsum dolor text....
-</div> -->

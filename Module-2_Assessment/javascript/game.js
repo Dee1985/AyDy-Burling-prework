@@ -1,86 +1,120 @@
-// const question = document.querySelector("#quote");
-const hiddenName = document.getElementById("hiddenName");
-const guessesRemaining = document.getElementById("guessesRemaining");
-const wrongLetters = document.getElementById("wrongLetters");
+//Empty variable buckets
+let randomQuote = [];
+let lettersInName = [];
+let dashes = 0;
+let correctLetter = [];
+let wrongLetter = [];
+
+//Score tracker variables
+let wins = 0;
+let losses = 0;
+let guessesRemaining = 6;
+
+//modal
 const modal = document.getElementById("modal");
-const hint = document.getElementById("hint");
 
-const randomQuotePicked = quotes[Math.floor(Math.random() * quotes.length)];
-const { name, quote } = randomQuotePicked;
+//STARTING THE GAME
+function startGame() {
+  //computer generates random quote/name from array
+  randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  console.log(quotes);
+  console.log(randomQuote.name);
 
-// 2) create function to pick quote
-function pickQuote() {
-  const randomQuotePicked = quotes[Math.floor(Math.random() * quotes.length)];
-  const { name, quote } = randomQuotePicked;
-  //   console.log(name);
-  //   console.log(quote);
-
-  // separate letters in name
-  console.log("quote picked: ", quote);
-  const hiddenLetters = name.split("");
-  //   console.log(hiddenLetters);
-
-  //display letters to be guessed with _ _ _
-  for (let i = 0; i < hiddenLetters.length; i++) {
-    hiddenLetters.splice(i, 1, "_");
-    console.log("hiddenLetters: ", name, hiddenLetters[i]);
+  // split the individual word into separate LETTERS, and store as array
+  lettersInName = randomQuote.name.split("");
+  console.log(lettersInName);
+  dashes = lettersInName.length;
+  console.log(dashes);
+  for (var i = 0; i < dashes; i++) {
+    correctLetter.push("_");
   }
-  //   for (let i = 0; i < hiddenLetters.length; i++) {
-  //     hiddenLetters[i] = "_";
-  //     console.log("hiddenLetters: ", name, hiddenLetters[i]);
-  //   }
+  console.log(correctLetter);
 
-  document.getElementById("quote").innerHTML = quote;
-  document.getElementById("hiddenName").innerHTML = hiddenLetters.join(" ");
-  console.log(hiddenLetters);
+  //showing the "_" within the HTML
+  document.getElementById("quote").innerHTML = randomQuote.quote;
+  document.getElementById("name").innerHTML = "  " + correctLetter.join("  ");
 }
 
-pickQuote();
+//STARTING THE GAME AGAIN: reset all values to previous values and call startGame()
+function reset() {
+  guessesRemaining = 6;
+  wrongLetter = [];
+  correctLetter = [];
+  startGame();
+}
 
-// Show hidden word
+//EVENTS: check for keypress && convert letter input to lowercase && store input in guesses
+document.onkeypress = function (e) {
+  const guesses = String.fromCharCode(e.keyCode).toLowerCase();
+  //check to see if guess entered matches value of random word
+  matchLetters(guesses);
+  //process wins/loss
+  endGame();
+  //store player guesses in console for reference
+  console.log(guesses);
 
-//EVENT LISTENERS==============================================================
-//only allow valid guesses - lowercase letters only
-//display only valid guesses on _ _ _
-//modal view
+  //display/store incorrect letters on screen
+  document.getElementById("wrongLetters").innerHTML =
+    "  " + wrongLetter.join(" ");
+};
+
+//MODAL VIEW
 $(document).ready(function () {
   $("#hint").click(function () {
     $("#modal").modal();
   });
 });
-//GAME RULES====================================================================
 
-// Show hidden word
-document.addEventListener("keydown", (e) => {
-  console.log("keypressed=", e.key);
-});
-
-//play starts with 6 lives
-//decrease lives with every wrong letter guess
-// Show lives
-let lives = 0;
-function guesses() {
-  if (lives === 0) {
-    console.log("GAME OVER!!");
-  } else {
-    pickQuote();
+//COMPARE TO SEE IF PLAYER INPUT MATCHES RANDOMLY GENERATED NAME
+function matchLetters(letter) {
+  //if the input the player entered is equal to randomQuote.name- then condition is true
+  let isLetterInName = false;
+  for (let i = 0; i < dashes; i++) {
+    if (randomQuote.name[i] === letter) {
+      // console.log(letter);
+      isLetterInName = true;
+    }
   }
-  document.getElementById("guessesRemaining").innerHTML = lives;
+  //also, check to see if each letter the player enters matches the letters in randomQuote.name
+  if (isLetterInName) {
+    for (let i = 0; i < dashes; i++) {
+      if (randomQuote.name[i] === letter) {
+        correctLetter[i] = letter;
+        // console.log(correctLetter);
+      }
+    }
+  }
+  //if the letters don't match, push the wrong letter into the wrong guesses section, and decrease number of guesses
+  else {
+    wrongLetter.push(letter);
+    guessesRemaining--;
+  }
+
+  //display matching letters in "_" && show tracked number of guesses
+  document.getElementById("name").innerHTML = correctLetter.join(" ");
+  document.getElementById("guessesRemaining").innerHTML = guessesRemaining;
 }
-guesses(lives);
 
-//display wrong guesses
-//if same wrong letter is guessed again in one game, display "you have already guessed that letter"
-// Keydown letter press
+//ENDING THE GAME
+function endGame() {
+  console.log(
+    "wins:" + wins + "| losses:" + losses + "| guesses left:" + guessesRemaining
+  );
+  //player wins
+  //turn array into string
+  if (lettersInName.toString() === correctLetter.toString()) {
+    wins++;
+    reset();
+    //display wins on screen
+    document.getElementById("wins").innerHTML = "wins: " + wins;
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++
-//player loses
-//when no lives left display "Loser" in modal
-//display button to play again
-//play loser music or clip
+    //player loses
+  } else if (guessesRemaining === 0) {
+    losses++;
+    reset();
+    //display losses on screen
+    document.getElementById("losses").innerHTML = "losses: " + losses;
+  }
+}
 
-//+++++++++++++++++++++++++++++++++++++++++++++++++++
-//player winner
-// modal of "Winner!"
-// play winning clip of quote or music
-//display button to play again
+startGame();
