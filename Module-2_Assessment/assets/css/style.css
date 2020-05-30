@@ -12,7 +12,9 @@ body {
   background-size: cover;
   overflow-x: hidden;
 }
-
+.btn {
+  border-color: rgb(105, 60, 2);
+}
 .shadow-lg {
   box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.9) !important;
 }
@@ -51,4 +53,10 @@ input {
 
 .guessesremaining {
   color: rgb(203, 50, 206);
+}
+
+#gameContainer {
+  display: block;
+  visibility: hidden;
+  padding-top: 100px;
 }

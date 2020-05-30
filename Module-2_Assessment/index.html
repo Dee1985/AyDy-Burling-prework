@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="assets/css/style.css" />
   </head>
   <body>
-    <section>
+    <section id="intro">
       <div class="container">
         <div class="row text-center justify-content-center shadow-lg p-3 mb-2 rounded mt-4">
           <div class="col">
@@ -24,8 +24,7 @@
                 <p class="lead text-center font-italic">Test Your Harry Potter Knowledge!</p>
                 <hr class="my-6" />
               <p class="intro">
-                Quotes from the Harry Potter series have been selected, and you
-                win by guessing the character's name that said the famous line(s).
+                Quotes from the Harry Potter series have been selected. Win by guessing the character's name that said the famous words.
               </p>
               <p class="intro">
                 <b>Be careful! Spelling counts!</b> You only have 6 guesses for
@@ -33,7 +32,7 @@
               </p>
               <!-- MODAL -->
                 <p class="intro">
-                  <button type="button" class="btn" data-toggle="modal" id="hint">⭐</button>
+                  <button type="button" class="btn" data-toggle="modal" id="hint">⭐ HINT</button>
                     <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"  aria-hidden="true">
                       <div class="modal-dialog" role="document">
                         <div class="modal-content">
@@ -59,17 +58,18 @@
                         </div>
                       </div>
                     </div>
-                      Click the star if you need some help. Doing so will
+                      Click the star button for a clue. Doing so will
                       provide you with a list of character names to choose from. But, I
                       challenge you not to peek!
                 </p>
+                <p>Press any button to start!</p>
               <!-- END MODAL -->
             </div>
           </div>
         </div>
     </section>
 
-    <section >
+    <section id= "gameContainer">
     <!-- Q&A box -->
       <div class="row justify-content-center">
             <div class="col-sm-10 col-lg-9" >
@@ -114,7 +114,7 @@
                 <hr>
                   <div class="row text-center guessesremaining">
                       <div class="col">
-                        <span id="guessesRemaining">6
+                        <span id="guessesRemaining">
                         </span>
                       </div>
                   </div>
@@ -126,7 +126,7 @@
               <div class="card-body">
                 <h6 class="card-title text-center text-info">WRONG GUESSES</h6>
                 <hr>
-                <div class="row text-center">
+                <div class="row text-center text-uppercase ">
                   <div class="col">
                     <span
                     id="wrongLetters" >
