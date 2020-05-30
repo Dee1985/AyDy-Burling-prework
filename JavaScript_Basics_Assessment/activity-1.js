@@ -1,51 +1,26 @@
 // Using JavaScript, compute the following:
 
-// The product of 9 and 9
-function product(x, y) {
-  return x * y;
-}
-product(9, 9);
+//1. The product of 9 and 9
+console.log("The product of 9 and 9 = ", 9 * 9);
 
-// The quotient of 56 and 12
-function quotient(a, b) {
-  return a / b;
-}
-quotient(56, 12);
+//2. The quotient of 56 and 12
+console.log("The quotient of 56 and 12 = ", 56 / 12);
 
-// The remainder of 281 divided by 9
-function remainder(num1, num2) {
-  return num1 % num2;
-}
-remainder(281, 9);
+//3. The remainder of 281 divided by 9
+console.log("The remainder of 281 divided by 9 = ", 281 % 9);
 
-// 18 divided by 0
-function divide(x, y) {
-  return x / y;
-}
-divide(18, 0);
-// ============================================================================
-// The sum of string 56 and string 92
-function parse() {
-  const num1 = parseInt("56", 10);
-  const num2 = parseInt("92", 10);
-  return num1 + num2;
-}
-parse();
+//4. 18 divided by 0
+console.log("18 divided by 0 = ", 18 / 0);
 
-//or without parseInt
-function concatStringNum() {
-  const year1 = "56";
-  const year2 = "92";
-  return year1 + year2;
-}
-concatStringNum();
-// ===========================================================================
+//5. The sum of string 56 and string 92
+//without parseInt
+console.log("The sum of string 56 and string 92 = ", "56" + "92");
 
-// Using any comparison operator you wish on the numbers 42 and 52, make it evaluate to false.
-function comparisonOp() {
-  const age1 = 42;
-  const age2 = 52;
-  const boolean = age1 > age2;
-  return boolean;
-}
-comparisonOp();
+//with parseInt
+console.log(
+  "the sum of string 56 and string 92 after converting to numbers= ",
+  parseInt("56", 10) + parseInt("92", 10)
+);
+
+//6. Using any comparison operator you wish on the numbers 42 and 52, make it evaluate to false.
+console.log("Is 42 greater than 52?", 42 > 52);
