@@ -2,24 +2,24 @@
 
 _Assessments with live site links contain their own ReadMe. Please refer to the designated ReadMe for the assignment by clicking on the link to the GitHub repo. This will provide you with further information. Thanks!_
 
-Table of Contents
+**Table of Contents**
 
-1.**HTML & Basic CSS Assessment:**
+1. **HTML & Basic CSS Assessment:**
 
 - repo: <https://github.com/Dee1985/html-basic-css>
 - live site: <https://dee1985.github.io/html-basic-css/>
 
-  2.**CSS Assessment:**
+2. **CSS Assessment:**
 
 - repo: <https://github.com/Dee1985/css>
 - live site: <https://dee1985.github.io/css/>
 
-  3.**Bootstrap Assessment:**
+3. **Bootstrap Assessment:**
 
 - repo: <https://github.com/Dee1985/bootstrap>
 - live site: <https://dee1985.github.io/bootstrap/>
 
-  4.**JavaScript Basics Assessment:**
+4. **JavaScript Basics Assessment:**
 
 - No live site with this section.
 
@@ -32,14 +32,14 @@ Table of Contents
 
     - Qustions are answered by using the console.
 
-    5.**Module 1 Assessment:**
-    _Portfolio Template using Bootstrap_
+5. **Module 1 Assessment:**
+   _Portfolio Template using Bootstrap_
 
 - repo: <https://github.com/Dee1985/portfolio-bootstrap>
 - live site: <https://dee1985.github.io/portfolio-bootstrap/>
 
-  6.**Module 2 Assesment:**
-  _JS Word Guessing Game_
+6. **Module 2 Assesment:**
+   _JS Word Guessing Game_
 
 - repo: <https://github.com/Dee1985/which-witch>
 - live site: <https://dee1985.github.io/which-witch/>
