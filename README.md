@@ -4,20 +4,22 @@ _Assessments with live site links contain their own ReadMe. Please refer to the 
 
 **Table of Contents**
 
-1. **Bootstrap Assessment**
+1. **Bootstrap Assessment:**
 
 - repo: <https://github.com/Dee1985/bootstrap>
 - live site: <https://dee1985.github.io/bootstrap/>
 
-2. **CSS Assessment**
+2. **CSS Assessment:**
 
-- live site: coming soon
+- repo: <>
+- live site: <>
 
-3. **HTML & Basic CSS Assessment**
+3. **HTML & Basic CSS Assessment:**
 
-- live site: coming soon
+- repo: <https://github.com/Dee1985/html-basic-css>
+- live site: <https://dee1985.github.io/html-basic-css/>
 
-4. **JavaScript Basics Assessment**
+4. **JavaScript Basics Assessment:**
 
 - No live site with this section.
   - Activity 1: Math quiz- using JS operators.
@@ -28,13 +30,14 @@ _Assessments with live site links contain their own ReadMe. Please refer to the 
   - Activity 3: JavaScript Arrays and Loops
     - Qustions are answered by using the console.
 
-5. **Module 1 Assessment**
+5. **Module 1 Assessment:**
    _Portfolio Template using Bootstrap_
 
-- live site: coming soon
+- repo: <>
+- live site: <>
 
-6. **Module 2 Assesment**
-   _Word Guessing Game_
+6. **Module 2 Assesment:**
+   _JS Word Guessing Game_
 
 - repo: <https://github.com/Dee1985/which-witch>
 - live site: <https://dee1985.github.io/which-witch/>
