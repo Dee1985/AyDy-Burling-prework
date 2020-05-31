@@ -1,9 +1,12 @@
 # AyDy Burling Prework
 
+_Assessments with live site links contain their own ReadMe. Please refer to the designated ReadMe for the assignment by clicking on the link to the Git HUb repo. This will provide you with further information. Thanks!_
+
 **Table of Contents**
 
 1. **Bootstrap Assessment**
-   live site: coming soon
+
+- live site: coming soon
 
 2. **CSS Assessment**
 
@@ -29,4 +32,5 @@
 
 6. **Module 2 Assesment**
 
+- repo: <https://github.com/Dee1985/which-witch>
 - live site: <https://dee1985.github.io/which-witch/>
