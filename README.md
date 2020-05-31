@@ -6,7 +6,8 @@ _Assessments with live site links contain their own ReadMe. Please refer to the 
 
 1. **Bootstrap Assessment**
 
-- live site: coming soon
+- repo: <https://github.com/Dee1985/bootstrap>
+- live site: <https://dee1985.github.io/bootstrap/>
 
 2. **CSS Assessment**
 
