@@ -12,10 +12,11 @@ live site: coming soon
 live site: coming soon
 
 **JavaScript Basics Assessment**
-No live site with this section. Qustions are answered by using the console the console.
+\*No live site with this section.
++Qustions are answered by using the console.
 
 **Module 1 Assessment**
 live site: coming soon
 
 **Module 2 Assesment**
-[live site:] (<https://dee1985.github.io/which-witch/)>
+live site: <https://dee1985.github.io/which-witch/>
