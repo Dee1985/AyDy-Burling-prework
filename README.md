@@ -11,8 +11,8 @@ _Assessments with live site links contain their own ReadMe. Please refer to the 
 
 2. **CSS Assessment:**
 
-- repo: <>
-- live site: <>
+- repo: <https://github.com/Dee1985/css>
+- live site: <https://dee1985.github.io/css/>
 
 3. **Bootstrap Assessment:**
 
