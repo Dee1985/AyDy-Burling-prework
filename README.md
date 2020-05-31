@@ -4,20 +4,20 @@ _Assessments with live site links contain their own ReadMe. Please refer to the 
 
 **Table of Contents**
 
-1. **Bootstrap Assessment:**
+1. **HTML & Basic CSS Assessment:**
 
-- repo: <https://github.com/Dee1985/bootstrap>
-- live site: <https://dee1985.github.io/bootstrap/>
+- repo: <https://github.com/Dee1985/html-basic-css>
+- live site: <https://dee1985.github.io/html-basic-css/>
 
 2. **CSS Assessment:**
 
 - repo: <>
 - live site: <>
 
-3. **HTML & Basic CSS Assessment:**
+3. **Bootstrap Assessment:**
 
-- repo: <https://github.com/Dee1985/html-basic-css>
-- live site: <https://dee1985.github.io/html-basic-css/>
+- repo: <https://github.com/Dee1985/bootstrap>
+- live site: <https://dee1985.github.io/bootstrap/>
 
 4. **JavaScript Basics Assessment:**
 
