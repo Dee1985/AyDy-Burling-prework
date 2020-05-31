@@ -1,5 +1,5 @@
 //SoundJay.com
-var audioData = [
+const audioData = [
   {
     badSound: new Howl({
       urls: ["sounds/fail-trumpet-01.mp3"],

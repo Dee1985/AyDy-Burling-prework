@@ -45,15 +45,12 @@ window.addEventListener("keydown", function (e) {
   vanishConEl.setAttribute("class", "container d-none");
   showEl.setAttribute("class", "container visible");
   document.onkeydown = function (e) {
-    console.log(e.keyCode);
     if (e.keyCode >= 65 && e.keyCode <= 90) {
       const guesses = e.key;
       //check to see if guess entered matches value of random word
       matchLetters(guesses);
-      //process wins/loss
+      //track wins and loss
       endGame();
-      //store player guesses in console for reference
-      console.log(guesses);
     }
     document.getElementById("wrongLetters").innerHTML = `${wrongLetter.join(
       " "
@@ -78,7 +75,6 @@ function reset() {
 
 //COMPARE TO SEE IF PLAYER INPUT MATCHES RANDOMLY GENERATED NAME
 function matchLetters(letter) {
-  //if the input the player enteres matches the random name- then condition is true
   let isLetterInName = false;
   for (let i = 0; i < dashes; i++) {
     if (randomQuote.name[i].includes(letter)) {
@@ -104,9 +100,8 @@ function matchLetters(letter) {
     //play fail trumpet sound
     audioData[0].badSound.play();
     console.log(wrongLetter);
-
-    //display matching letters in "_" && show tracked number of guesses
   }
+  //display matching letters in "_" && show tracked number of guesses
   document.getElementById("name").innerHTML = correctLetter.join(" ");
   document.getElementById("guessesRemaining").innerHTML = `${guessesRemaining}`;
   //display/store incorrect letters on screen
