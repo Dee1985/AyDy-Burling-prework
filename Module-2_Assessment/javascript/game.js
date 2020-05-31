@@ -12,11 +12,6 @@ let guessesRemaining = 6;
 let wins = 0;
 let losses = 0;
 
-// randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-// const { quote, name } = randomQuote;
-// console.log(name);
-// console.log(quote);
-
 //STARTING THE GAME
 function startGame() {
   const guessesRemaining = `<span> ${""}</span>`;
@@ -88,17 +83,19 @@ function reset() {
 function matchLetters(letter) {
   //if the input the player enteres matches the random name- then condition is true
   let isLetterInName = false;
+  // keyData[0].play();
   for (let i = 0; i < dashes; i++) {
     if (randomQuote.name[i].includes(letter)) {
       isLetterInName = true;
     }
   }
   //also, check to see if each letter the player enters matches the letters in randomQuote.name
+
   if (isLetterInName) {
     for (let i = 0; i < dashes; i++) {
       if (randomQuote.name[i] === letter) {
         correctLetter[i] = letter;
-        console.log("correct letter", correctLetter[i]);
+        console.log("correct letter", letter);
       }
     }
   }
@@ -107,21 +104,25 @@ function matchLetters(letter) {
     wrongLetter.push(letter);
     console.log("wrong letter", wrongLetter);
     guessesRemaining--;
-  }
+    //play fail trumpet sound
+    audioData[0].badSound.play();
+    console.log(audioData[0].badSound.play());
 
-  //display matching letters in "_" && show tracked number of guesses
+    //display matching letters in "_" && show tracked number of guesses
+  }
   document.getElementById("name").innerHTML = correctLetter.join(" ");
   document.getElementById("guessesRemaining").innerHTML = `${guessesRemaining}`;
   //display/store incorrect letters on screen
   document.getElementById("wrongLetters").innerHTML =
     "  " + wrongLetter.join(" ");
 }
-
+// function onKeyDown(e) {
+//   if (keyData[e.key]) {
+//     wrongLetter = e.key;
+//     keyData[event.key].badSound.play();
+//   }
 //DECIDING WINS AND LOSSES && KEEPING TRACK OF SCORES AND NUMBER OF GUESSES
 function endGame() {
-  console.log(
-    "wins:" + wins + "| losses:" + losses + "| guesses left:" + guessesRemaining
-  );
   //If player wins:
   //turn array into string
   if (lettersInName.toString() === correctLetter.toString()) {
@@ -152,28 +153,6 @@ function endGame() {
   console.log(`guesses left: ${guessesRemaining}`);
 }
 
-//initialize game
+//INITIALIZE
 startGame();
 //----------------------------------------------------------------------------------------
-//EVENTS
-// Keydown letter press
-
-//********** moved inside window event listener to prevent wrong guesses from registering */
-// document.onkeydown = function (e) {
-//   console.log(e.keyCode);
-//   if (e.keyCode >= 65 && e.keyCode <= 90) {
-//     const guesses = e.key;
-
-//     //check to see if guess entered matches value of random word
-//     matchLetters(guesses);
-
-//     //process wins/loss
-//     endGame();
-//     //store player guesses in console for reference
-//     console.log(guesses);
-//   }
-//   document.getElementById("wrongLetters").innerHTML = `
-
-//     ${"  " + wrongLetter.join(" ")}
-//   `;
-// };
