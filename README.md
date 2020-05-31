@@ -1,6 +1,6 @@
 # AyDy Burling Prework
 
-_Assessments with live site links contain their own ReadMe. Please refer to the designated ReadMe for the assignment by clicking on the link to the Git HUb repo. This will provide you with further information. Thanks!_
+_Assessments with live site links contain their own ReadMe. Please refer to the designated ReadMe for the assignment by clicking on the link to the Git Hub repo. This will provide you with further information. Thanks!_
 
 **Table of Contents**
 
