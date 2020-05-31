@@ -24,6 +24,7 @@ _Assessments with live site links contain their own ReadMe. Please refer to the 
     - Qustions are answered by using the console.
   - Activity 2: JavaScript Variables, Alerts, Prompts, and Conditionals
     - Qustions are answered by using the console.
+      - I decided to include additional reasoning for when a name is equal to the predetermined character limit. The instructions for the activity did not account for this particular condition. Since my name (AyDy) is 4 characters long, it is neither greater than nor less than the character limit of 4. Therefore, it seemed illogical (for me at least) to alert the user that names that are 4 characters long are anything other than equal to the character limit.
   - Activity 3: JavaScript Arrays and Loops
     - Qustions are answered by using the console.
 
