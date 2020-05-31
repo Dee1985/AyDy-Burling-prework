@@ -1,25 +1,21 @@
 # AyDy Burling Prework
 
-## Bootstrap Assessment
+## Table of Contents
 
+**Bootstrap Assessment**
 live site: coming soon
 
-## CSS Assessment
-
+**CSS Assessment**
 live site: coming soon
 
-## HTML Basic CSS Assessment
-
+**HTML Basic CSS Assessment**
 live site: coming soon
 
-## JavaScript Basics Assessment
+**JavaScript Basics Assessment**
+No live site with this section. Qustions are answered by using the console the console.
 
+**Module 1 Assessment**
 live site: coming soon
 
-## Module 1 Assessment
-
-live site: coming soon
-
-## Module 2 Assesment
-
-live site: <https://dee1985.github.io/which-witch/>
+**Module 2 Assesment**
+[live site:] (<https://dee1985.github.io/which-witch/)>
