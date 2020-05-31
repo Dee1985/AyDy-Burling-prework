@@ -48,19 +48,16 @@ window.addEventListener("keydown", function (e) {
     console.log(e.keyCode);
     if (e.keyCode >= 65 && e.keyCode <= 90) {
       const guesses = e.key;
-
       //check to see if guess entered matches value of random word
       matchLetters(guesses);
-
       //process wins/loss
       endGame();
       //store player guesses in console for reference
       console.log(guesses);
     }
-    document.getElementById("wrongLetters").innerHTML = `
-
-      ${"  " + wrongLetter.join(" ")}
-    `;
+    document.getElementById("wrongLetters").innerHTML = `${wrongLetter.join(
+      " "
+    )}`;
   };
 });
 
@@ -83,7 +80,6 @@ function reset() {
 function matchLetters(letter) {
   //if the input the player enteres matches the random name- then condition is true
   let isLetterInName = false;
-  // keyData[0].play();
   for (let i = 0; i < dashes; i++) {
     if (randomQuote.name[i].includes(letter)) {
       isLetterInName = true;
@@ -95,6 +91,7 @@ function matchLetters(letter) {
     for (let i = 0; i < dashes; i++) {
       if (randomQuote.name[i] === letter) {
         correctLetter[i] = letter;
+        audioData[0].goodSound.play();
         console.log("correct letter", letter);
       }
     }
@@ -106,7 +103,7 @@ function matchLetters(letter) {
     guessesRemaining--;
     //play fail trumpet sound
     audioData[0].badSound.play();
-    console.log(audioData[0].badSound.play());
+    console.log(wrongLetter);
 
     //display matching letters in "_" && show tracked number of guesses
   }
@@ -116,11 +113,7 @@ function matchLetters(letter) {
   document.getElementById("wrongLetters").innerHTML =
     "  " + wrongLetter.join(" ");
 }
-// function onKeyDown(e) {
-//   if (keyData[e.key]) {
-//     wrongLetter = e.key;
-//     keyData[event.key].badSound.play();
-//   }
+
 //DECIDING WINS AND LOSSES && KEEPING TRACK OF SCORES AND NUMBER OF GUESSES
 function endGame() {
   //If player wins:
