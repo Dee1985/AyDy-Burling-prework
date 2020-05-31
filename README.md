@@ -1,6 +1,6 @@
 # AyDy Burling Prework
 
-_Assessments with live site links contain their own ReadMe. Please refer to the designated ReadMe for the assignment by clicking on the link to the Git Hub repo. This will provide you with further information. Thanks!_
+_Assessments with live site links contain their own ReadMe. Please refer to the designated ReadMe for the assignment by clicking on the link to the GitHub repo. This will provide you with further information. Thanks!_
 
 Table of Contents
 
@@ -32,8 +32,8 @@ Table of Contents
 
     - Qustions are answered by using the console.
 
-  5.**Module 1 Assessment:**
-  _Portfolio Template using Bootstrap_
+    5.**Module 1 Assessment:**
+    _Portfolio Template using Bootstrap_
 
 - repo: <https://github.com/Dee1985/portfolio-bootstrap>
 - live site: <https://dee1985.github.io/portfolio-bootstrap/>
