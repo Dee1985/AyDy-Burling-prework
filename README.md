@@ -20,7 +20,7 @@ _Assessments with live site links contain their own ReadMe. Please refer to the 
 4. **JavaScript Basics Assessment**
 
 - No live site with this section.
-  - Activity 1: JavaScript math quiz.
+  - Activity 1: Math quiz- using JS operators.
     - Qustions are answered by using the console.
   - Activity 2: JavaScript Variables, Alerts, Prompts, and Conditionals
     - Qustions are answered by using the console.
@@ -29,10 +29,12 @@ _Assessments with live site links contain their own ReadMe. Please refer to the 
     - Qustions are answered by using the console.
 
 5. **Module 1 Assessment**
+   _Portfolio Template using Bootstrap_
 
 - live site: coming soon
 
 6. **Module 2 Assesment**
+   _Word Guessing Game_
 
 - repo: <https://github.com/Dee1985/which-witch>
 - live site: <https://dee1985.github.io/which-witch/>
