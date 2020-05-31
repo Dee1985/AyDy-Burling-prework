@@ -33,8 +33,8 @@ _Assessments with live site links contain their own ReadMe. Please refer to the 
 5. **Module 1 Assessment:**
    _Portfolio Template using Bootstrap_
 
-- repo: <>
-- live site: <>
+- repo: <https://github.com/Dee1985/portfolio-bootstrap>
+- live site: <https://dee1985.github.io/portfolio-bootstrap/>
 
 6. **Module 2 Assesment:**
    _JS Word Guessing Game_
