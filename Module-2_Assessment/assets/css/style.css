@@ -4,8 +4,7 @@
 }
 
 body {
-  background: url("/Module-2_Assessment/images/64789.jpg")
-    /* background: url("https://wallpaperplay.com/walls/full/b/0/6/64789.jpg") */
+  background: url("https://wallpaperplay.com/walls/full/b/0/6/64789.jpg")
     no-repeat fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
